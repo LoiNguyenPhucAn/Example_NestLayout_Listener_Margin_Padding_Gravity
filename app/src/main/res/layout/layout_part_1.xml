@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LayoutPart1Activity">
+
+    <RelativeLayout
+        android:id="@+id/rlTopContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light">
+
+        <TextView
+            android:id="@+id/tvTopLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/holo_green_light"
+            android:text="@string/top_left_lbl" />
+
+        <TextView
+            android:id="@+id/tvBelow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTopLeft"
+            android:layout_alignLeft="@+id/tvTopLeft"
+            android:layout_alignRight="@+id/tvTopLeft"
+            android:background="@android:color/holo_blue_light"
+            android:text="@string/below_1_lbl" />
+
+        <Button
+            android:id="@+id/btnTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_blue_bright"
+            android:text="@string/top_right_lbl"
+            tools:ignore="TextContrastCheck" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvBelowRl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/below_2_lbl" />
+
+    <Button
+        android:id="@+id/bntTransLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Transfer to layout part 2" />
+
+
+</LinearLayout>
